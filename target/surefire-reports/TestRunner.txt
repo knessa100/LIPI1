@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.589 s <<< FAILURE! - in TestRunner
+TestRunner.setUpClass  Time elapsed: 0.42 s  <<< FAILURE!
+io.cucumber.core.gherkin.FeatureParserException: 
+Failed to parse resource at: file:///Users/kamrunnessa/Documents/GitStuff/LIPI1/src/test/java/features/login.feature
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: User should able to login with valid email and valid password'
+(2:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given User should be on TalentTEK homepage'
+(3:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User enter valid email address'
+(4:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User enter valid password'
+(5:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Log In button'
+(6:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then User should be able to successfully login'
+(8:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: User should not able to login with valid email and invalid password'
+(9:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given User should be on TalentTEK homepage'
+(10:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And  User enter valid email address'
+(11:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And  User enter invalid password'
+(12:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Log In button'
+
