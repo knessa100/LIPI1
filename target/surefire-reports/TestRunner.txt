@@ -1,19 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.589 s <<< FAILURE! - in TestRunner
-TestRunner.setUpClass  Time elapsed: 0.42 s  <<< FAILURE!
-io.cucumber.core.gherkin.FeatureParserException: 
-Failed to parse resource at: file:///Users/kamrunnessa/Documents/GitStuff/LIPI1/src/test/java/features/login.feature
-(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: User should able to login with valid email and valid password'
-(2:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given User should be on TalentTEK homepage'
-(3:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User enter valid email address'
-(4:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User enter valid password'
-(5:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Log In button'
-(6:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then User should be able to successfully login'
-(8:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: User should not able to login with valid email and invalid password'
-(9:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given User should be on TalentTEK homepage'
-(10:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And  User enter valid email address'
-(11:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And  User enter invalid password'
-(12:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Log In button'
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 47.683 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["User should be able to create a brand new email with unique email", "Optional[Signup Feature]"](5)  Time elapsed: 33.075 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='First Name']"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'MacBook-Pro', ip: '2600:4041:5e11:d00:18f8:854b:4815:762a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [103d276daca7a682ef7ca52a4d75a7b6, findElement {using=name, value=First Name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/b1/h6dpbvls359...}, goog:chromeOptions: {debuggerAddress: localhost:63315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63315/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 103d276daca7a682ef7ca52a4d75a7b6
 

@@ -1,77 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-26T00:30:33 EST" name="Surefire suite" finished-at="2023-02-26T00:30:33 EST" duration-ms="263">
+  <suite started-at="2023-03-01T12:03:36 EST" name="Surefire suite" finished-at="2023-03-01T12:04:24 EST" duration-ms="47423">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1445d7f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-02-26T00:30:33 EST" name="Surefire test" finished-at="2023-02-26T00:30:33 EST" duration-ms="263">
+    <test started-at="2023-03-01T12:03:36 EST" name="Surefire test" finished-at="2023-03-01T12:04:24 EST" duration-ms="47423">
       <class name="TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@1445d7f]" started-at="2023-02-26T00:30:33 EST" name="setUpClass" finished-at="2023-02-26T00:30:33 EST" duration-ms="238" status="FAIL">
-          <exception class="io.cucumber.core.gherkin.FeatureParserException">
-            <message>
-              <![CDATA[Failed to parse resource at: file:///Users/kamrunnessa/Documents/GitStuff/LIPI1/src/test/java/features/login.feature
-(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: User should able to login with valid email and valid password'
-(2:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given User should be on TalentTEK homepage'
-(3:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User enter valid email address'
-(4:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User enter valid password'
-(5:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Log In button'
-(6:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then User should be able to successfully login'
-(8:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: User should not able to login with valid email and invalid password'
-(9:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given User should be on TalentTEK homepage'
-(10:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And  User enter valid email address'
-(11:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And  User enter invalid password'
-(12:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Log In button']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///Users/kamrunnessa/Documents/GitStuff/LIPI1/src/test/java/features/login.feature
-(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: User should able to login with valid email and valid password'
-(2:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given User should be on TalentTEK homepage'
-(3:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User enter valid email address'
-(4:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And User enter valid password'
-(5:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Log In button'
-(6:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then User should be able to successfully login'
-(8:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: User should not able to login with valid email and invalid password'
-(9:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given User should be on TalentTEK homepage'
-(10:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And  User enter valid email address'
-(11:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And  User enter invalid password'
-(12:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When User clicks on Log In button'
-at io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:52)
-at io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:47)
-at java.base/java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
-at io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
-at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:75)
-at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:60)
-at java.base/java.nio.file.Files.walkFileTree(Files.java:2810)
-at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:53)
-at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
-at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
-at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
-at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
-at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
-at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:108)
-at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1589)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.core.gherkin.FeatureParserException -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@1445d7f]" started-at="2023-03-01T12:03:37 EST" name="setUpClass" finished-at="2023-03-01T12:03:37 EST" duration-ms="311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@1445d7f]" started-at="2023-02-26T00:30:33 EST" name="tearDownClass" finished-at="2023-02-26T00:30:33 EST" duration-ms="0" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1445d7f]" started-at="2023-03-01T12:03:37 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-01T12:03:43 EST" duration-ms="5854" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should able to login with valid email and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[This is login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1445d7f]" started-at="2023-03-01T12:03:43 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-01T12:03:45 EST" duration-ms="2802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not able to login with valid email and invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[This is login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1445d7f]" started-at="2023-03-01T12:03:45 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-01T12:03:48 EST" duration-ms="2675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not able to login with invalid email and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[This is login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1445d7f]" started-at="2023-03-01T12:03:48 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-01T12:03:51 EST" duration-ms="2614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not able to login with invalid email and invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[This is login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@1445d7f]" started-at="2023-03-01T12:03:51 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-01T12:04:24 EST" duration-ms="33063" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to create a brand new email with unique email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Signup Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='First Name']"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'MacBook-Pro', ip: '2600:4041:5e11:d00:18f8:854b:4815:762a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [103d276daca7a682ef7ca52a4d75a7b6, findElement {using=name, value=First Name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/b1/h6dpbvls359...}, goog:chromeOptions: {debuggerAddress: localhost:63315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63315/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 103d276daca7a682ef7ca52a4d75a7b6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='First Name']"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'MacBook-Pro', ip: '2600:4041:5e11:d00:18f8:854b:4815:762a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [103d276daca7a682ef7ca52a4d75a7b6, findElement {using=name, value=First Name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/b1/h6dpbvls359...}, goog:chromeOptions: {debuggerAddress: localhost:63315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63315/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 103d276daca7a682ef7ca52a4d75a7b6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at stepDefinition.SignupSteps.userEnterFirstName(SignupSteps.java:33)
+at ✽.User enter first name(file:///Users/kamrunnessa/Documents/GitStuff/LIPI1/src/test/java/features/signup.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@1445d7f]" started-at="2023-03-01T12:04:24 EST" name="tearDownClass" finished-at="2023-03-01T12:04:24 EST" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
