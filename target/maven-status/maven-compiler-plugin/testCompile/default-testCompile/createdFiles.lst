@@ -1,6 +1,7 @@
-pageObject/loginPageObjects.class
 stepDefinition/LoginSteps.class
 stepDefinition/SignupSteps.class
+pageObject/login_page.class
+stepDefinition/Hook.class
+base/TestData.class
 base/Config.class
 TestRunner.class
-stepDefinition/Hook.class
